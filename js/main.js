@@ -73,3 +73,45 @@ if (title || message) {
   const messageElement = document.querySelector("#message");
   if (messageElement) messageElement.textContent = message;
 }
+
+// Select the existing audio player and track display
+const audioPlayer = document.getElementById("audioPlayer");
+const trackDisplay = document.getElementById("currentTrack");
+
+// List of songs for the playlist
+const playlist = [
+  "audio/it-s-that-time-of-year-pecan-pie-main-version-6006-02-21.mp3", 
+  "audio/christmas-rap-kevin-macleod-main-version-9983-03-06.mp3"
+];
+
+let currentTrackIndex = 0;
+
+// Function to update the track display
+const updateTrackDisplay = () => {
+  const currentTrack = playlist[currentTrackIndex].split("/").pop(); // Extract filename
+  trackDisplay.textContent = `Now Playing: ${currentTrack}`;
+};
+
+// Function to play the next track
+const playNextTrack = () => {
+  currentTrackIndex++;
+  if (currentTrackIndex < playlist.length) {
+    audioPlayer.src = playlist[currentTrackIndex];
+    audioPlayer.play();
+  } else {
+    console.log("Playlist ended");
+  }
+  updateTrackDisplay();
+};
+
+// Initialize the audio player with the first track
+audioPlayer.src = playlist[currentTrackIndex];
+updateTrackDisplay();
+
+// Play the next song when the current one ends
+audioPlayer.addEventListener("ended", playNextTrack);
+
+// Optional: Automatically start playing (if browser policy allows)
+audioPlayer.play().catch((error) => {
+  console.log("Autoplay failed:", error.message);
+});

@@ -9,3 +9,11 @@
     - ljud
 5. Styla allt
 6. Publicera med pages
+
+Music from #Uppbeat (free for Creators!):
+https://uppbeat.io/t/pecan-pie/its-that-time-of-year
+License code: G089IVOPTZK5DBG7
+
+Music from #Uppbeat (free for Creators!):
+https://uppbeat.io/t/kevin-macleod/christmas-rap
+License code: EZQGHAMDXWLKJUTF

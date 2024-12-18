@@ -61,3 +61,20 @@ canvas {
     left: 0;
     z-index: 0;
 }
+
+#currentTrack {
+    font-size: var(--step--1); /* Adjust size based on your scaling system */
+    color: var(--color-fg); /* Keep it consistent with the rest of your design */
+    font-family: var(--font-body); /* Match the body font style */
+    margin-top: 0.5em; /* Add some space from the audio player */
+    text-align: center; /* Center-align the text */
+}
+
+#direkted {
+    font-size: 4rem;  /* Slightly larger text */
+    font-weight: bold;  /* Makes the text bolder */
+}
+
+#message {
+    font-weight: bold;  
+}

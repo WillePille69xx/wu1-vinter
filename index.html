@@ -1,19 +1,55 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="eng">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vinter</title>
+  <title>Winter</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <main>
-    <h1 id="title">SlasK</h1>
-    <p id="message">The slask oh yeah</p>
+    <!-- Välkomstsektion -->
+    <section class="welcome">
+      <h1 id="title">Merry Christmas</h1>
+      <p id="direkted">To You, Traveler</p>
+      <p id="message">And May The New Year Shine Great Fortune Upon Thee</p>
+    </section>
+
+    <!-- Bildgalleri -->
+    <section class="gallery">
+      <h2>Winter Pictures</h2>
+      <div class="image-container">
+        <img src="images/snowman.webp" alt="Snowman">
+        <img src="images/Snowtree.webp" alt="Snowtree">
+        <img src="images/snow3.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- Ljudsektion -->
+    <section class="audio">
+      <h2>Listen to Christmas songs</h2>
+      <!-- Predefined audio player -->
+      <audio id="audioPlayer" controls>
+        Din webbläsare stödjer inte ljuduppspelning.
+      </audio>
+      <p id="currentTrack">Now Playing: </p>
+    </section>
+    
+
+    <!-- Om vinter -->
+    <section class="about">
+      <h2>About Winter</h2>
+      <p>
+        Winter is a magical time of year. Snow covers the ground, the air is crisp and nature feels almost surreal. 
+        It is a time for calm, reflection and maybe a little bus in the snow.
+      </p>
+    </section>
   </main>
+
+  <!-- Scripts -->
   <script src="js/Particle.js"></script>
   <script src="js/main.js"></script>
 </body>
